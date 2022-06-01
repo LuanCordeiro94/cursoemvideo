@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem diâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="midia/vegas-elipsy.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG -->
+
+    <p>Também podemos reproduzir dessa forma</p>
+    <audio preload="metadata" controls>
+        <source src="midia/acdc-tnt.mp3" type="audio/mpeg">
+        <source src="midia/acdc-tnt.ogg" type="audio/ogg">
+        <source src="midia/acdc-tnt.wav" type="audio/wav">
+        <!-- Quando o navegador não consegue reproduzir -->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/acdc-tnt.rar">clique aqui</a> para fazer o download do arquivo rar.</p>
+        </audio>
+</body>
+</html>
